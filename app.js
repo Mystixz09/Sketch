@@ -1,7 +1,9 @@
 const contentContainer = document.querySelector(".content");
 const inputs = document.querySelectorAll("input");
+const gridValue = document.querySelector(".rangevalue")
 
 let boxes ;
+let text ;
 let isPressed = false;
 let isOver = true;
 
@@ -13,11 +15,8 @@ inputs[1].addEventListener("input" ,()=>{
     }
     makeBoxes();
     
+    
 });
-// contentContainer.addEventListener('mouseout' , ()=>{
-//     isPressed = false;
-// });
-
 
 function makeBoxes(){
     for(let i = 0; i<Number(inputs[1].value) ;i++){
@@ -35,9 +34,11 @@ function makeBoxes(){
             element.append(box);
         }
     });
+    text =`${inputs[1].value} x ${inputs[1].value}`;
+    gridValue.textContent = text;
     boxes = document.querySelectorAll(".box");
     boxes.forEach((box) =>{
-        box.addEventListener('mouseenter', (e) => {
+        box.addEventListener('mouseover', (e) => {
             isOver = true;
             console.log(isPressed);
             console.log(isOver);
@@ -45,9 +46,13 @@ function makeBoxes(){
                 e.target.style.backgroundColor = inputs[0].value;
             }
         });
+        box.addEventListener('click' , (e)=>{
+            e.target.style.backgroundColor = inputs[0].value;
+        });
         box.addEventListener('mousedown', () => {
             isPressed = true;
         });
+        
         box.addEventListener('mouseup', () => {
             isPressed = false;
         });
@@ -55,16 +60,4 @@ function makeBoxes(){
 }
 makeBoxes();
 
-
-
-
-
-
-
-
-
-
-// boxes.forEach((box) =>{
-//     box.addEventListener('cl')
-// });
 
