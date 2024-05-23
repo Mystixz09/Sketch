@@ -96,6 +96,11 @@ button{
     width: 75%;
     border: 2px solid #333;
     border-radius: 20px;
+    cursor: pointer;
+}
+.clicked{
+    color: #cacaca;
+    background-color: #333;
 }
 .rangevalue{
     color: #333;
