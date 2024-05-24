@@ -131,3 +131,15 @@ input[type="range"]::-webkit-slider-thumb {
 
 }
 
+footer p{
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #333;
+}
+a{
+    text-decoration: none;
+}
+a:-webkit-any-link{
+    color: rgb(0, 65, 206);
+}
