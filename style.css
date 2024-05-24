@@ -29,20 +29,21 @@ h1{
 .sub{
     text-align: center;
     font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 20px;
 }
 hr{
     width: 90%;
     background-color: #333;
     border: none;
     height: 5px;
-    margin-top: 20px;
+
     border-radius: 20px;
 }
 .container{
     width: 90%;
     display: flex;
     flex-direction: row;
-    margin-bottom: 3rem;
 }
 .buttons-container{
     width: 30%;
@@ -62,7 +63,7 @@ hr{
     height: 550px;
     display: flex;
     flex-direction: column;
-    
+    box-shadow: 0px 0px 40px 10px #838383;
 }
 .row{
     display: flex;
@@ -86,6 +87,7 @@ input[type="color"] {
 input[type="color"]::-webkit-color-swatch {
 	border: none;
     border-radius: 80px;
+    box-shadow: 0px 0px 20px 5px #838383;
 }
 button{
     background-color: #cacaca;
@@ -97,6 +99,7 @@ button{
     border: 2px solid #333;
     border-radius: 20px;
     cursor: pointer;
+    box-shadow: 0px 0px 10px 5px #838383;
 }
 .clicked{
     color: #cacaca;
@@ -106,6 +109,7 @@ button{
     color: #333;
     font-size: 1.5rem;
     font-weight: 400;
+
 }
 input[type="range"]{
     -webkit-appearance: none;
@@ -114,6 +118,7 @@ input[type="range"]{
     height: 4px;
     background: #333;
     border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px #838383;
 }
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -123,5 +128,6 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 50%;
     background: #11cf41;
     cursor: pointer;
+
 }
 
