@@ -1,3 +1,2 @@
-#Etch-a_sketch
+# Etch-a_sketch
 
-##Draw beautiful pixel Art
